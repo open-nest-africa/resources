@@ -17,22 +17,25 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
-            👋 Hello and welcome to the OpenNest Africa community!
+            👋 Hey there amazing new contributor Welcome to OpenNest-Africa you’ve officially joined a vibrant family of builders dreamers and doers across the continent 🌍✨
 
-            Thanks for opening your first issue, we’re excited to have you here! 🎉  
-            OpenNest is a space where builders, learners, and open-source enthusiasts connect, grow, and create together.
+            We see you We appreciate your courage to take the first step in open source and we’re here to back you up every step of the way 🚀
 
-            If you’d like to ask questions, get help, or meet others in the community, join our Slack space:  
-            👉 [Click here to join our Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+            Have questions? Need guidance Or just want to say hi Jump into our Slack community where mentors and fellow contributors are ready to support you  
+            👉 [Join our OpenNest Africa Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
 
-            We’re glad you’re here, let’s build something great together! 🚀
+            Your journey here matters, Together let’s build the future of African open source one pull request one issue and one connection at a time 💛🔥
+
+            Welcome aboard let’s get started 💻🙌
 
           pr-message: |
-            🎉 Thank you for your first pull request, and welcome to OpenNest Africa! 👋
+            🎉 Wow your first pull request in OpenNest-Africa Welcome to the family 👏👋
 
-            We’re thrilled to see you contributing to our projects. Whether this is your first time in open source or you're a seasoned contributor, you’re now part of a growing community of builders and creators.
+            We’re beyond excited to see you contribute to this community of passionate builders. You’re not alone there’s a whole team ready to help you learn grow and succeed
 
-            Have a question or want to say Hi? Join our Slack community to connect with other contributors:  
-            👉 [Click here to join our Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+            Got questions or want to connect with fellow contributors and mentors Our Slack community is the place to be  
+            👉 [Join us on Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
 
-            Thank you again, we can’t wait to collaborate with you more! 💛🚀
+            Remember every great journey begins with a single step and you just took yours We’ve got your back 💛🔥🚀
+
+            Let’s make magic happen together
