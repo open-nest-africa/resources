@@ -8,34 +8,6 @@ on:
 
 jobs:
   greeting:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
-    steps:
-      - uses: actions/first-interaction@v1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: |
-            👋 Hey there amazing new contributor Welcome to OpenNest-Africa you’ve officially joined a vibrant family of builders dreamers and doers across the continent 🌍✨
-
-            We see you We appreciate your courage to take the first step in open source and we’re here to back you up every step of the way 🚀
-
-            Have questions? Need guidance Or just want to say hi Jump into our Slack community where mentors and fellow contributors are ready to support you  
-            👉 [Join our OpenNest Africa Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
-
-            Your journey here matters, Together let’s build the future of African open source one pull request one issue and one connection at a time 💛🔥
-
-            Welcome aboard let’s get started 💻🙌
-
-          pr-message: |
-            🎉 Wow your first pull request in OpenNest-Africa Welcome to the family 👏👋
-
-            We’re beyond excited to see you contribute to this community of passionate builders. You’re not alone there’s a whole team ready to help you learn grow and succeed
-
-            Got questions or want to connect with fellow contributors and mentors Our Slack community is the place to be  
-            👉 [Join us on Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
-
-            Remember every great journey begins with a single step and you just took yours We’ve got your back 💛🔥🚀
-
-            Let’s make magic happen together
+    uses: open-nest-africa/.github/.github/workflows/greetings.yml@main
+    with:
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
