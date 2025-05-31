@@ -1,0 +1,38 @@
+name: Greetings
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Hello and welcome to the OpenNest Africa community!
+
+            Thanks for opening your first issue, we’re excited to have you here! 🎉  
+            OpenNest is a space where builders, learners, and open-source enthusiasts connect, grow, and create together.
+
+            If you’d like to ask questions, get help, or meet others in the community, join our Slack space:  
+            👉 [Click here to join our Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+
+            We’re glad you’re here, let’s build something great together! 🚀
+
+          pr-message: |
+            🎉 Thank you for your first pull request, and welcome to OpenNest Africa! 👋
+
+            We’re thrilled to see you contributing to our projects. Whether this is your first time in open source or you're a seasoned contributor, you’re now part of a growing community of builders and creators.
+
+            Have a question or want to say Hi? Join our Slack community to connect with other contributors:  
+            👉 [Click here to join our Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+
+            Thank you again, we can’t wait to collaborate with you more! 💛🚀
