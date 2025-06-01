@@ -1,67 +1,182 @@
-# OpenNest-Africa — Resources Repository
+## Git & GitHub: A Beginner's Guide to Open Source Collaboration
 
-Welcome to the **OpenNest-Africa Resources Repository** — a central hub for all the educational content we’re building to help **anyone, anywhere** get started with and contribute to **open source**.
+# Introduction
+This guide is designed to help new contributors including developers, students, career switchers, and anyone interested in open source understand how to use Git and GitHub, the foundational tools for version control and collaborative work.
 
----
+# 1. What is Git?
+Git is a distributed version control system that allows multiple developers to work on the same codebase simultaneously. It tracks every change made to the code enabling collaboration, history tracking and version management.
 
-## What is This Repository?
+# Benefits of Git;
 
-This repository houses articles, guides, videos, templates, and other resources created during community-led events and contributions — including our participation in the [OnlyDust Hackathon](https://onlydust.com).
+**Keep history of code changes**
+Git stores a complete history of all modifications made to a project. This means you can see when a change was made, who made it, and why. This helps in understanding the evolution of a project and provides a timeline of development.
 
-It is organized around **three key audiences**:
-- 👩‍💻 **Technical** contributors
-- 📣 **Non-technical** contributors
-- 🧭 **Explorers** (curious minds just getting started)
+**Revert to previous versions**
+With Git, if something goes wrong—like a bug introduced in a recent change—you can easily roll back to a previous stable version of your code. This minimizes risk and ensures recoverability.
 
-Our mission is to **make open source accessible** to everyone — regardless of background, location, or skill level.
+**Work independently using branches**
+Branches allow developers to work on new features or fixes in isolation from the main codebase. Each developer can create a branch, make changes, and test without affecting the live (production) version of the code.
 
----
+**Merge work from multiple developers**
+When work on different branches is complete, Git allows you to merge these branches together. This makes team collaboration seamless, as Git helps resolve conflicts and integrates everyone's contributions into the final product.
 
-## Who Are We Creating These Resources For?
+# 2. What is GitHub?
+GitHub is a web-based platform that hosts Git repositories. It adds collaborative features like issue tracking, pull requests, and code reviews, making team development easier and more efficient.
 
-We’re building for:
-- Students looking to gain real-world experience
-- Designers, writers, and project managers who want to contribute beyond code
-- Curious learners who don’t yet know where to begin
-- Anyone who has felt like open source wasn’t made for them
+# Basic Git Commands
 
-Open source needs **everyone** — not just developers.
+| Command                        | Description                          |
+|-------------------------------|--------------------------------------|
+| `git init`                    | Initialize a Git repository          |
+| `git clone <repo-url>`        | Clone a GitHub repo                  |
+| `git status`                  | Check repo status                    |
+| `git add <file>`              | Stage changes                        |
+| `git commit -m "message"`     | Commit changes with a message        |
+| `git push`                    | Upload local commits to GitHub       |
+| `git pull`                    | Fetch and merge changes from GitHub  |
 
----
 
-##  Understanding the Audiences
+# Key GitHub Concepts:
+- **Repository (Repo):** A repository is a project folder that stores your code, documentation, and the full history of changes. Repositories can be public (viewable by anyone) or private (restricted access). Each repository contains branches, commits, and tags.
 
-###  Technical
-Developers, DevOps, testers — those writing or reviewing code, solving bugs, or working on infrastructure.
+- **Fork:** A fork is a personal copy of someone else's repository on your GitHub account. It allows you to freely experiment with changes without affecting the original project. Forking is a core practice in open source and once you’ve made your changes, you can submit a pull request to the original repo.
 
-###  Non-Technical
-Writers, designers, community managers, documentation contributors, translators, researchers, and others who contribute without writing code.
+- **Pull Request (PR):** A pull request is a request to merge your changes from your branch or fork into another repository. It opens a conversation where maintainers and contributors can review your code, discuss changes, request revisions, and finally approve or reject the changes. PRs are essential for code review and quality control.
 
-###  Explorers
-Those new to open source who are still figuring out how they can fit in — no prior experience needed.
+- **Issue:** An issue is a way to report bugs, suggest features, or ask questions. Each issue can have labels, assignees, milestones, and comments. Issues help organize development work and track progress in a collaborative way.
 
----
+- **Star:** Starring a repository is like bookmarking it. It shows appreciation for the project and makes it easier for you to find and follow later. It’s also a helpful metric to gauge a project’s popularity or usefulness.
+      
+# 3. Installing and Configuring Git
 
-##  How You Can Help
+# Installation:
+- Windows/Mac: Download from https://git-scm.com
 
-- Create content during or after the [OnlyDust Hackathon](https://onlydust.com)
-- Pick from our [open issues](https://github.com/open-nest-africa/resources)
-- Share our work and bring others into the community
-- Give feedback and suggest improvements
+- Linux:
 
----
+```bash
+sudo apt install git
+```       
+**Configuration:**
+```sh
+git config --global user.name "Your Name"
+```
+```sh
+git config --global user.email "you@example.com"
+```
+**Check configuration:**
+```sh
+git config --list
+```
 
-## Join the Conversation
+# 4. Basic Git Commands
 
-We collaborate, chat, and support each other in our community Slack.  
-👉 [Join us on Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+Clone a Repository:
+```sh
+git clone https://github.com/username/repo-name.git
+```
 
----
+Check Status:
 
-## Support Our Work
+```sh
+git status
+```
 
-We are an early-stage open source community led by volunteers.  
-If you’d like to support our work:
 
-- [Sponsor us on GitHub](https://github.com/sponsors/open-nest-africa)  
-- [Sponsor us via Open Collective](https://opencollective.com/open-nest-africa)
+Stage Changes:
+```sh
+git add filename 
+```
+```sh
+git add . 
+```
+
+Commit Changes:
+```sh
+git commit -m "Your commit message" 
+```
+
+Push Changes:
+```sh
+git push origin branch-name
+```
+
+Pull Updates:
+```sh
+git pull origin branch-name
+```
+
+Create a Branch:
+```sh
+git checkout -b feature-branch
+```
+
+Merge Branch:
+```sh
+git checkout main 
+```
+```sh
+git merge feature-branch
+```
+
+# 5. Sample Contribution Workflow Step-by-Step:
+- Fork the Repository: Click the "Fork" button on GitHub.
+
+- Clone Your Fork:
+```sh
+git clone https://github.com/your-username/project-name.git
+```
+```sh
+cd project-name
+```
+
+- Create a New Branch:
+```sh
+git checkout -b my-feature-branch
+```
+
+- Make and Commit Changes:
+```sh
+git add .
+```
+
+```sh
+git commit -m "Describe your changes"
+```
+
+- Push the Branch to GitHub:
+```sh
+git push origin my-feature-branch
+```
+
+- Open a Pull Request (PR): On GitHub, go to your forked repo and click "Compare & pull request."
+
+- Respond to Review Feedback: Update your branch and push again. The PR will auto-update.
+    
+
+
+# 6. Best Practices 
+Following best practices ensures smooth collaboration, readable history, and easier project maintenance. Here's a detailed breakdown of each point:
+
+- **Use meaningful commit messages**
+Your commit message should clearly describe the change you made. This helps others (and your future self) understand the purpose of the change at a glance.
+
+- **Keep PRs small and focused**
+Small and single-purpose pull requests are easier to review, test, and merge.This improves code quality and avoids conflicts when merging.
+
+ - **Regularly pull the latest changes**
+Before starting work or pushing your code, use (git pull origin main).This ensures you're working with the latest version and helps avoid merge conflicts when your changes are integrated.
+
+- **Comment on PRs and issues respectfully**
+Be polite and constructive in code reviews, discussions, and feedback. Kind and respectful comments build a welcoming community and encourage collaboration.
+
+- **Always branch off main for new features**
+Don’t make changes directly on the main branch. Instead git checkout main, git pull origin main and git checkout -b feature/new-login-form. This way, your work is isolated, easier to test, and can be reviewed separately before merging into the main codebase.
+
+# 7.Conclusion
+Git and GitHub are powerful tools that empower developers to collaborate, manage code, and contribute to projects of any scale—whether personal or global. By understanding how to track changes with Git and navigate GitHub’s collaborative features like pull requests, forks, and issues, you’ve taken the first step toward becoming a productive and confident open source contributor
+
+
+
+
+
