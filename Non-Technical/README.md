@@ -12,11 +12,11 @@ We believe **everyone belongs in open source**, and this section is here to supp
 
 | Folder | Purpose |
 |--------|---------|
-| [`Designers/`](./Designers/) | Visual design, UI/UX, brand assets, design systems, and tooling |
-| [`Writers/`](./Writers/) | Documentation, articles, blogs, editing, and content creation |
-| [`Translators/`](./Translators/) | Localization and language contributions to make content accessible globally |
-| [`Community-Managers/`](./Community-Managers/) | Guides on engagement, onboarding, event planning, moderation, etc. |
-| [`General/`](./General/) | Shared non-role-specific resources (e.g., how to use Git, open source terms, intro videos) |
+| [`Designers`](./Designers/) | Visual design, UI/UX, brand assets, design systems, and tooling |
+| [`Writers`](./Writers/) | Documentation, articles, blogs, editing, and content creation |
+| [`Translators`](./Translators/) | Localization and language contributions to make content accessible globally |
+| [`Community-Managers`](./Community-Managers/) | Guides on engagement, onboarding, event planning, moderation, etc. |
+| [`General`](./General/) | Shared non-role-specific resources (e.g., how to use Git, open source terms, intro videos) |
 
 > 💡 We plan to grow this list over time. Want to add a new role or resource category? Feel free to open an issue or PR!
 
