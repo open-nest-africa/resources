@@ -14,7 +14,7 @@ Step-by-step write-ups, tutorials, and how-to guides.
 ### 🎥 [Videos](./videos/)
 Screencasts, walkthroughs, and recorded lessons.
 
-###  📘 [Guides](./guides/)
+###  📘 [Guides](./Guides/)
 In-depth resources like handbooks, contributor manuals, or structured learning paths.
 
 ## How to Contribute
